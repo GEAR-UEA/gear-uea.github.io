@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>terrance - Category - My Hugo FixIt Site</title>
+    <link>http://example.org/categories/terrance/</link>
+    <description>terrance - Category - My Hugo FixIt Site</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 24 May 2023 17:22:34 -0400</lastBuildDate><atom:link href="http://example.org/categories/terrance/" rel="self" type="application/rss+xml" /><item>
+  <title>First_post</title>
+  <link>http://example.org/posts/first-post/</link>
+  <pubDate>Wed, 24 May 2023 17:22:34 -0400</pubDate>
+  <author>Author</author>
+  <guid>http://example.org/posts/first-post/</guid>
+  <description><![CDATA[<p>Nulla quis ex eu ullamco dolore occaecat anim irure adipisicing irure quis id enim qui. Non ullamco amet laborum sit aute ea duis veniam occaecat eu in veniam. Eu laboris voluptate nisi quis laborum. Quis duis id officia laborum.</p>]]></description>
+</item>
+</channel>
+</rss>
