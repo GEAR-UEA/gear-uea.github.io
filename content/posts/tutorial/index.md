@@ -42,7 +42,7 @@ A proposta do hugo.io é criar sites estásticos. Ou seja, não é preciso preoc
 
 
 
-# Primeiros passos 
+## Primeiros passos 
 
 Crie uma conta no [Gravatar](https://en.gravatar.com/) para que seu post tenha sua foto e nome. 
 
@@ -58,17 +58,17 @@ Os posts podem ser criados de três maneiras:
 - Dentro de uma pasta (recomendável)
 - Via linha de comando
 
-## Na raiz 
+### Na raiz 
 
 É possível realizar esse método pelo próprio site do GitHub, uma vez que há a opção "add file". O arquivo deve ser em formato .md (Markdown) com o cabeçalho padrão que pode ser encontrado no markdown desse próprio post. Dessa maneira não é possível adicionar featured-image (a capa do post).
 
-## Dentro de uma pasta
+### Dentro de uma pasta
 
 Essa é a maneira mais adequada porque isola os componentes daquele post. Isso é, se você quiser adicionar imagens, vídeos ou arquivos de áudio, o Markdown vai entender e os arquivos não ficarão misturados com os arquivos de outros posts. 
 
 **Atenção: é obrigatório que, dentro de uma pasta, o nome do arquivo Markdown seja ```index.md``` e a imagem de capa deve se chamar ```featured-image```.**
 
-## Via linha de comando 
+### Via linha de comando 
 
 Para esse método, é necessário ter Hugo instalado. Caso dê algum erro, pode ser que sua versão esteja desatualizada. 
 Dentro do terminal, use o comando:
@@ -78,7 +78,7 @@ hugo new posts/post.md
 O Hugo automaticamente criará o template para seu post. Por default, o arquivo vem com "draft" como "true", ou seja, não aparecerá no site a não ser que você altere para "false". 
 
 
-# Teste 
+## Teste 
 
 Caso você queira testar se está tudo certo antes de subir para o git, pode usar a seguinte linha de comando:
 
@@ -93,7 +93,7 @@ hugo
 ```
 As pastas /public e /resources serão atualizadas automaticamente. 
 
-# Atualização 
+## Atualização 
 
 Criado o arquivo .md no repositório, é hora de subir para o git. Como boa prática, use o comando: ```git status``` para certificar-se que o arquivo foi criado. 
 
@@ -103,7 +103,7 @@ git commit -m "adiciona post <nome>"
 git push
 ```
 
-# Tutoriais 
+## Tutoriais 
 
 GIT: 
 - https://rogerdudler.github.io/git-guide/index.pt_BR.html
