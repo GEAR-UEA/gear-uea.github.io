@@ -228,7 +228,7 @@ theme = "FixIt"
       #  identifier of avatar menu link
       avatarMenu = ""
       #  title shown in home page (HTML format is supported)
-      title = "Grupo de Estudos de Automação e Robótica"
+      title = "Grupo de Estudos Aplicados à Robótica"
       # subtitle shown in home page
       subtitle = "Universidade do Estado do Amazonas (UEA)"
       # whether to use typeit animation for subtitle
