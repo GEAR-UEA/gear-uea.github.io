@@ -761,7 +761,7 @@ theme = "FixIt"
   #  Gravatar config
   [params.gravatar]
     #  Depends on the author's email, if the author's email is not set, the local avatar will be used
-    enable = false
+    enable = true
     # Gravatar host, default: "www.gravatar.com"
     host = "www.gravatar.com" # ["cn.gravatar.com", "gravatar.loli.net", ...]
     style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]

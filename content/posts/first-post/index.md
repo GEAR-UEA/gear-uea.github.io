@@ -4,10 +4,10 @@ subtitle:
 date: 2023-05-24T17:22:34-04:00
 draft: false
 author:
-  name: Fulano
-  link: fulano.com
-  email: fulano@gmail.com
-  avatar:
+  name: Giovanna
+  link: https://github.com/teodororo
+  email: giovanna.teod@gmail.com
+  avatar: giovannateod
 description:
 keywords:
 license:
@@ -37,12 +37,14 @@ repost:
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
 
-A proposta do hugo.io é criar sites estásticos. O que isso significa? Que não é preciso preocupar-se com banco de dados, API, etc. pois não é um sistema _real time_. A cada modificação do repositório Git, o .html e .css serão criados automaticamente e o site será atualizado.
+A proposta do hugo.io é criar sites estásticos. Ou seja, não é preciso preocupar-se com banco de dados, API, etc. A cada modificação do repositório Git, o .html e .css serão criados automaticamente e o site será atualizado.
 
 
 
 
 # Primeiros passos 
+
+Crie uma conta no [Gravatar](https://en.gravatar.com/) para que seu post tenha sua foto e nome. 
 
 Para criar um novo post, clone o repositório com o seguinte comando:
 
@@ -95,4 +97,14 @@ As pastas /public e /resources serão atualizadas automaticamente.
 
 Criado o arquivo .md no repositório, é hora de subir para o git. Como boa prática, use o comando: ```git status``` para certificar-se que o arquivo foi criado. 
 
-...
+```
+git add .
+git commit -m "adiciona post <nome>"
+git push
+```
+
+# Tutoriais 
+
+GIT: 
+- https://rogerdudler.github.io/git-guide/index.pt_BR.html
+
