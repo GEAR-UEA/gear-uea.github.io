@@ -1,12 +1,12 @@
 ---
-title: First_post
+title: Tutorial para membros do GEAR
 subtitle:
 date: 2023-05-24T17:22:34-04:00
 draft: false
 author:
-  name:
-  link:
-  email:
+  name: Fulano
+  link: fulano.com
+  email: fulano@gmail.com
   avatar:
 description:
 keywords:
@@ -14,17 +14,17 @@ license:
 comment: false
 weight: 1
 tags:
-  - terrance
+  - tutorial
 categories:
-  - terrance
+  - Documentação
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
 resources:
   - name: featured-image
-    src: featured-image.png
+    src: featured-image.jpg
   - name: featured-image-preview
-    src: featured-image-preview.png
+    src: featured-image-preview.jpg
 toc: true
 math: false
 lightgallery: false
@@ -36,12 +36,63 @@ repost:
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-Nulla quis ex eu ullamco dolore occaecat anim irure adipisicing irure quis id enim qui. Non ullamco amet laborum sit aute ea duis veniam occaecat eu in veniam. Eu laboris voluptate nisi quis laborum. Quis duis id officia laborum.
-<!--more-->
-Velit commodo aliquip voluptate esse. Eiusmod duis incididunt reprehenderit consequat consectetur laborum eiusmod proident amet laborum. Amet consectetur cillum minim cillum ullamco est. Non laboris deserunt Lorem ipsum ullamco aute. Id culpa consequat ex Lorem do ea nisi amet occaecat minim excepteur exercitation laboris. Amet adipisicing ipsum ullamco aliquip dolor id commodo exercitation deserunt ut dolor exercitation.
 
-Magna eu adipisicing eu minim incididunt aliqua. Eu commodo enim dolore proident eu id. Ea tempor elit aliqua qui mollit qui enim cupidatat. Consequat laborum deserunt deserunt in nostrud reprehenderit duis esse ipsum excepteur eiusmod id fugiat occaecat.
+A proposta do hugo.io é criar sites estásticos. O que isso significa? Que não é preciso preocupar-se com banco de dados, API, etc. pois não é um sistema _real time_. A cada modificação do repositório Git, o .html e .css serão criados automaticamente e o site será atualizado.
 
-Ea quis occaecat dolor cupidatat laborum adipisicing in. Ea nostrud duis Lorem reprehenderit fugiat cillum ea ea consequat aliquip adipisicing. Veniam ipsum commodo ad voluptate qui nisi cupidatat exercitation et mollit elit do esse. Non nostrud tempor incididunt ea labore et ut voluptate eu laboris minim minim. Consequat Lorem id minim dolore ut cillum voluptate voluptate esse. Occaecat eiusmod eiusmod nulla anim ad anim fugiat fugiat sunt ex laboris.
 
-Duis nostrud fugiat quis et ex Lorem magna ut mollit nostrud nostrud cillum amet culpa. Magna proident irure consectetur nulla qui et Lorem quis incididunt et. Cupidatat reprehenderit sint tempor laborum aliquip Lorem Lorem cillum velit deserunt nostrud. Sit proident minim duis adipisicing reprehenderit reprehenderit deserunt deserunt nulla adipisicing fugiat. Et in sunt ad quis sit et ea sit cillum est dolore irure consequat ex.
+
+
+# Primeiros passos 
+
+Para criar um novo post, clone o repositório com o seguinte comando:
+
+```bash
+git clone https://github.com/GEAR-UEA/gear-uea.github.io.git --recursive
+```
+Cuidado para não esquecer o ```recursive```. 
+
+Os posts podem ser criados de três maneiras: 
+- Na raiz de content/posts 
+- Dentro de uma pasta (recomendável)
+- Via linha de comando
+
+## Na raiz 
+
+É possível realizar esse método pelo próprio site do GitHub, uma vez que há a opção "add file". O arquivo deve ser em formato .md (Markdown) com o cabeçalho padrão que pode ser encontrado no markdown desse próprio post. Dessa maneira não é possível adicionar featured-image (a capa do post).
+
+## Dentro de uma pasta
+
+Essa é a maneira mais adequada porque isola os componentes daquele post. Isso é, se você quiser adicionar imagens, vídeos ou arquivos de áudio, o Markdown vai entender e os arquivos não ficarão misturados com os arquivos de outros posts. 
+
+**Atenção: é obrigatório que, dentro de uma pasta, o nome do arquivo Markdown seja ```index.md``` e a imagem de capa deve se chamar ```featured-image```.**
+
+## Via linha de comando 
+
+Para esse método, é necessário ter Hugo instalado. Caso dê algum erro, pode ser que sua versão esteja desatualizada. 
+Dentro do terminal, use o comando:
+```bash
+hugo new posts/post.md
+```
+O Hugo automaticamente criará o template para seu post. Por default, o arquivo vem com "draft" como "true", ou seja, não aparecerá no site a não ser que você altere para "false". 
+
+
+# Teste 
+
+Caso você queira testar se está tudo certo antes de subir para o git, pode usar a seguinte linha de comando:
+
+```bash
+hugo server
+```
+E depois entrar no "site" ```http://localhost:1313```, sendo que "1313" pode mudar. Atente-se à porta correta. 
+
+Caso você queira criar o .html e .css, o comando é:
+```bash
+hugo
+```
+As pastas /public e /resources serão atualizadas automaticamente. 
+
+# Atualização 
+
+Criado o arquivo .md no repositório, é hora de subir para o git. Como boa prática, use o comando: ```git status``` para certificar-se que o arquivo foi criado. 
+
+...
