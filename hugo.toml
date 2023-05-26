@@ -62,6 +62,7 @@ theme = "FixIt"
   #  FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
   # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
   disableThemeInject = false
+  favicon = "/favicon/gear-solid.svg"
 
   #  App icon config
   [params.app]
@@ -70,7 +71,7 @@ theme = "FixIt"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = ""
+    svgFavicon = "/favicon/gear-solid.svg"
     # Safari mask icon color
     iconColor = "#5bbad5"
     # Windows v8-10 tile color
